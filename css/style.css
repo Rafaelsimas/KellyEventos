@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+:root {
+  --green-color: rgb(68, 192, 68);
+}
+
+.screen-hidden {
+  display: none;
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+  color: var(--green-color);
+}
+
+.box-home-screen {
+  background-image: url("../img/Design\ sem\ nome.svg");
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 700px;
+}
+
+.home-login {
+  width: 90%;
+  padding: 1.2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+}
+
+.home-login input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid lightgrey;
+  margin-bottom: 15px;
+}
+
+.home-login .btn-login {
+  background-color: var(--green-color);
+  width: 100%;
+  text-align: center;
+  padding: 0.8rem;
+  color: white;
+}
+
+/* --------------main------------- */
+.box-main-screen {
+  max-width: 800px;
+  text-align: center;
+  height: 100vh;
+}
+
+/* ------------FEEDBACK ITEM------- */
+.feedback-item {
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 1.1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feedback-item select {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+textarea {
+  width: 100%;
+  height: 3.9rem;
+}
+
+.btn-submit {
+  background-color: var(--green-color);
+  width: 85%;
+  padding: 0.3rem;
+  border: none;
+  font-weight: bold;
+}

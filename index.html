@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Kelly Eventos</title>
+  </head>
+  <body>
+    <!-- LOGIN -->
+    <div class="screen1">
+      <div class="box-home-screen">
+        <div class="home-login">
+          <h1 class="title poppins-bold">Kelly Eventos</h1>
+          <input type="text" id="nameUser" placeholder="Informe seu nome" />
+          <a href="#" onclick="login()" class="btn-login">ENTRAR</a>
+        </div>
+      </div>
+    </div>
+    <!-- MAIN -->
+    <div class="screen2 screen-hidden">
+      <div class="box-main-screen">
+        <h2>Avalie nosso serviço</h2>
+
+        <form id="feedbackForm">
+          <div class="main-content">
+            <!-- 1 -->
+            <div class="feedback-item">
+              <label>Organização do Evento</label>
+
+              <select
+                class="feedback-select"
+                data-categoria="Organização do Evento"
+                required
+              >
+                <option value="">Selecione uma opção</option>
+                <option value="Ótimo">Ótimo</option>
+                <option value="Bom">Bom</option>
+                <option value="Razoável">Razoável</option>
+                <option value="Ruim">Ruim</option>
+                <option value="Péssimo">Péssimo</option>
+              </select>
+            </div>
+
+            <!-- 2 -->
+            <div class="feedback-item">
+              <label>Criatividade</label>
+
+              <select
+                class="feedback-select"
+                data-categoria="Criatividade"
+                required
+              >
+                <option value="">Selecione uma opção</option>
+                <option value="Ótimo">Ótimo</option>
+                <option value="Bom">Bom</option>
+                <option value="Razoável">Razoável</option>
+                <option value="Ruim">Ruim</option>
+                <option value="Péssimo">Péssimo</option>
+              </select>
+            </div>
+
+            <!-- 3 -->
+            <div class="feedback-item">
+              <label>Café da Manhã</label>
+
+              <select class="feedback-select" data-categoria="Cafe" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Ótimo">Ótimo</option>
+                <option value="Bom">Bom</option>
+                <option value="Razoável">Razoável</option>
+                <option value="Ruim">Ruim</option>
+                <option value="Péssimo">Péssimo</option>
+              </select>
+            </div>
+
+            <!-- 4 -->
+            <div class="feedback-item">
+              <label>Almoço</label>
+
+              <select class="feedback-select" data-categoria="Almoço" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Ótimo">Ótimo</option>
+                <option value="Bom">Bom</option>
+                <option value="Razoável">Razoável</option>
+                <option value="Ruim">Ruim</option>
+                <option value="Péssimo">Péssimo</option>
+              </select>
+            </div>
+
+            <!-- 5 -->
+            <div class="feedback-item">
+              <label>Diversão</label>
+
+              <select
+                class="feedback-select"
+                data-categoria="Diversão"
+                required
+              >
+                <option value="">Selecione uma opção</option>
+                <option value="Ótimo">Ótimo</option>
+                <option value="Bom">Bom</option>
+                <option value="Razoável">Razoável</option>
+                <option value="Ruim">Ruim</option>
+                <option value="Péssimo">Péssimo</option>
+              </select>
+            </div>
+
+            <!-- COMENTÁRIO -->
+
+            <div class="feedback-item">
+              <label for="comentario">
+                Conte um pouco sobre sua experiência
+              </label>
+
+              <textarea
+                id="comentario"
+                placeholder="Escreva seu comentário..."
+              ></textarea>
+            </div>
+
+            <button class="btn-submit" type="submit">Enviar Feedback</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- END MESSAGE -->
+    <div class="box-endMessage-screen screen-hidden">
+      <div class="end-message"></div>
+    </div>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
