@@ -52,7 +52,7 @@ ${feedback.comentario || "Nenhum comentário informado."}
 
 📱 Feedback enviado pelo sistema de avaliação.
 `
-  const telefone = "5522992315716"
+  const telefone = "5522990000000"
   const mensagemCodificada = encodeURIComponent(mensagem)
   const url = `https://wa.me/${telefone}?text=${mensagemCodificada}`
   window.open(url, "_blank")
